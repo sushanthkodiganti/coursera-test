@@ -1,0 +1,87 @@
+* {
+    font-family: sans-serif;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0 40px 0;
+}
+
+h2 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 50px;
+    border: 1px solid black;
+    border-top: 0px;
+    border-right: 0px;
+    padding: 10px 30px 10px 30px;
+}
+
+div {
+    position: relative;
+    background-color: grey;
+    margin: 3.33%;
+    border: 1px solid black;     
+}
+
+div > p {
+    padding: 65px 15px 15px 15px;
+}
+
+#item-1 > h2 {
+    background-color: rgb(154, 248, 255);    
+}
+
+#item-2 > h2 {
+    background-color: rgb(253, 70, 70);  
+}
+
+#item-3 > h2 {
+    background-color: rgb(253, 255, 127);    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #item-1 {
+        margin: 0px 1.665% 3.33% 3.33%;
+        width: 45%;
+        float: left;
+    }
+
+    #item-2 {
+        margin: 0px 3.33% 3.33% 1.665%;
+        width: 45%;
+        float: right;
+    }
+
+    #item-3 {
+        clear: both;
+        margin: 0 3.33% 3.33% 3.33%;
+    }
+
+}
+
+@media (min-width: 991px) {
+    #item-1 {
+        margin: 0 1.25% 2.5% 2.5%;
+        width: 30%;
+        float: left;
+    }
+
+    #item-2 {
+        margin: 0 1.25% 2.5% 1.25%;
+        width: 30%;
+        float: left;
+    }
+
+    #item-3 {
+        margin: 0 2.5% 2.5% 1.25%;
+        width: 30%;
+        float: left;
+    }
+
+}
